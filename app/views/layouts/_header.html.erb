@@ -54,4 +54,9 @@
       </div>
     </div>
   </nav>
+  <div class="row justify-content-center p-2">
+    <% if user_signed_in? %>
+    <%= render 'searches/search' %>
+    <% end %>
+  </div>
 </header>
